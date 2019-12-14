@@ -12,129 +12,144 @@
 </head>
 
 <body>
+    <div class="navigation-bar">
 
-<header>
-<!--with css styling we will have a banner image of the park for now just some markup also creates 3 links one to the home page and two to the other pages-->
-    <div class="hero-image">
-        <div class="hero-text">
-        
-        <h1>Future Land! - Home</h1>
-        
-        <!--enter the  page.html title in this link to link your page-->
-        <button onclick="window.location.href = 'index.html';">
-            Home
-        </button>
-        
-        <!--enter the  page.html title in this link to link your page-->
-        <button onclick="window.location.href = 'page title here';">
-            Map/Park Info
-        </button>
-        
-        <!--enter the  page.html title in this link to link your page-->
-        <button onclick="window.location.href = 'page title here';">
-            Community
-        </button>
-        
+
+        <div id="navigation-container">
+
+            <img src="https://via.placeholder.com/70">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Page2</a></li>
+                <li><a href="#">Page3</a></li>
+            </ul>
         </div>
     </div>
-</header>
 
-<!--Top of the page welcome message to visitors-->
-<div id="fpGreeting">
-    <div id="fpwelcome">
-    <p>
-    Welcome to Future Land Amusment Park
-    </p>
+    <header>
+        <!--with css styling we will have a banner image of the park for now just some markup also creates 3 links one to the home page and two to the other pages-->
+        <div class="hero-image">
+            <div class="hero-text">
+
+                <h1>Future Land! - Home</h1>
+
+                <!--enter the  page.html title in this link to link your page-->
+                <button onclick="window.location.href = 'index.html';">
+                    Home
+                </button>
+
+                <!--enter the  page.html title in this link to link your page-->
+                <button onclick="window.location.href = 'page title here';">
+                    Map/Park Info
+                </button>
+
+                <!--enter the  page.html title in this link to link your page-->
+                <button onclick="window.location.href = 'page title here';">
+                    Community
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!--Top of the page welcome message to visitors-->
+    <div id="fpGreeting">
+        <div id="fpwelcome">
+            <p>
+                Welcome to Future Land Amusment Park
+            </p>
+        </div>
+        <div id="fpwelcomeText">
+            <p>
+                Here you will experience the wonder that is space exploration and the imaginings of what the future is, was, and could be.
+            </p>
+        </div>
     </div>
-    <div id="fpwelcomeText">
-    <p>
-    Here you will experience the wonder that is space exploration and the imaginings of what the future is, was, and could be.
-    </p>
-    </div>
-</div>
 
-<!--the section indicating how and where tickets can be purchased for the park-->
-<div>
-    <h2>How To Buy Tickets</h2>
-    <p>Tickets can be purchased online, at the door, or at these locations.</p>
-    <ul>
-        <li id="store1">Random Store 1</li>
-        <li id="store2">Random Store 2</li>
-        <li id="store3">Random Store 3</li>
-    </ul>
-    
-<!--a button for purchasing tickets. only creates an alert that there are no tickets-->
-    <button type="button" onclick="alert('Sorry no tickets available at this time')">Buy Tickets online</button>
-</div>
-
-<!--a basic calender list for working hours of the park-->
-<div id="fpcalender">
-    <h2>Hours of Operations</h2>
-    <ul>
-        <li id="monday">Monday: 8 a.m. - 6 p.m.</li>
-        <li id="Tuesday">Tuesday: 8 a.m. - 6 p.m.</li>
-        <li id="Wednesday">Wednesday: 8 a.m. - 6 p.m.</li>
-        <li id="Thursday">Thursday: 8 a.m. - 6 p.m.</li>
-        <li id="Friday">Friday: 8 a.m. - 6 p.m.</li>
-        <li id="Saturday">Saturday: 8 a.m. - 6 p.m.</li>
-        <li id="Sunday">Sunday: 10 a.m. - 6 p.m.</li>
-    </ul>
-    <p>Hours may change on Holidays</p>
-</div>
-    
-<!--the section indicating the most popular attractions-->
-<div id="bestRides">
-    <h2>Popular Attractions</h2>
-    <img src="img/blur.jpg" alt="Gravatron ride spinning" style="width:128px;height:128px;">
-    <img src="img/ringWorld.jpg" alt="ring world space station" style="width:128px;height:128px;">
-    <img src="img/vrSpace.jpg" alt="V.R. spcae exploration" style="width:128px;height:128px;">
-</div>
-
-<!--the section indicating new things coming-->
-<div id="newAttractions">
-    <h2>New and Upcoming Attractions</h2>
-    <ol>
-        <li id="newAttraction1">Anti Grav Simulator - Ever wondered what it would be like to be weight less? Soon you wont have to wonder anymore.</li>
-        <li id="newAttraction2">Robot World - The robots are taking over! but they just want to be you friend come meet the robots.</li>
-        <li id="newAttraction3">World of Tomorrow - The world of tomorrow has many delights and secrets to be discovered soon you can experience them all. The future is only blink away.</li>
-    </ol>
-</div>
-    
-<!--the sections discribing where to stay and a greeting explaining-->
-<div id="accomidations">
-    <h2>Where to Stay</h2>
-    <p>We are excited to have you come and visit our park, for the best possiable experience please stay at these accomidations that we have partnered with. They are within walking distance to the park and have been inspected for level of comfort.</p>
-    <ol>
-        <li id="firstChoice">Joe Blow Hotel 5 stars</li>
-        <li id="secondChoice">SpaceShuttle Hotel 4 stars</li>
-        <li id="thirdChoice">Rockets Are Us Motel 4 stars</li>
-    </ol>
-</div>
-
-<!--contact information and linking to the other pages-->
-<footer>
-    <div id="fpLinks">
+    <!--the section indicating how and where tickets can be purchased for the park-->
+    <div>
+        <h2>How To Buy Tickets</h2>
+        <p>Tickets can be purchased online, at the door, or at these locations.</p>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page2.html">Page 2</a></li>
-            <li><a href="page.html">Page 3</a></li>
+            <li id="store1">Random Store 1</li>
+            <li id="store2">Random Store 2</li>
+            <li id="store3">Random Store 3</li>
         </ul>
+
+        <!--a button for purchasing tickets. only creates an alert that there are no tickets-->
+        <button type="button" onclick="alert('Sorry no tickets available at this time')">Buy Tickets online</button>
     </div>
-    
-    <div id="blog">
-        <p><a href="blog.html">Visitor Blog Posts</a></p>
-    </div>
-    
-    <div id="contactInformation">
+
+    <!--a basic calender list for working hours of the park-->
+    <div id="fpcalender">
+        <h2>Hours of Operations</h2>
         <ul>
-            <li id="contact">Contact Us:</li>
-            <li id="name">Future Land</li>
-            <li id="email"><a href="f.futurelandemail.com">f.futurelandemail.com</a></li>
+            <li id="monday">Monday: 8 a.m. - 6 p.m.</li>
+            <li id="Tuesday">Tuesday: 8 a.m. - 6 p.m.</li>
+            <li id="Wednesday">Wednesday: 8 a.m. - 6 p.m.</li>
+            <li id="Thursday">Thursday: 8 a.m. - 6 p.m.</li>
+            <li id="Friday">Friday: 8 a.m. - 6 p.m.</li>
+            <li id="Saturday">Saturday: 8 a.m. - 6 p.m.</li>
+            <li id="Sunday">Sunday: 10 a.m. - 6 p.m.</li>
         </ul>
+        <p>Hours may change on Holidays</p>
     </div>
-</footer>
+
+    <!--the section indicating the most popular attractions-->
+    <div id="bestRides">
+        <h2>Popular Attractions</h2>
+        <img src="img/blur.jpg" alt="Gravatron ride spinning" style="width:128px;height:128px;">
+        <img src="img/ringWorld.jpg" alt="ring world space station" style="width:128px;height:128px;">
+        <img src="img/vrSpace.jpg" alt="V.R. spcae exploration" style="width:128px;height:128px;">
+    </div>
+
+    <!--the section indicating new things coming-->
+    <div id="newAttractions">
+        <h2>New and Upcoming Attractions</h2>
+        <ol>
+            <li id="newAttraction1">Anti Grav Simulator - Ever wondered what it would be like to be weight less? Soon you wont have to wonder anymore.</li>
+            <li id="newAttraction2">Robot World - The robots are taking over! but they just want to be you friend come meet the robots.</li>
+            <li id="newAttraction3">World of Tomorrow - The world of tomorrow has many delights and secrets to be discovered soon you can experience them all. The future is only blink away.</li>
+        </ol>
+    </div>
+
+    <!--the sections discribing where to stay and a greeting explaining-->
+    <div id="accomidations">
+        <h2>Where to Stay</h2>
+        <p>We are excited to have you come and visit our park, for the best possiable experience please stay at these accomidations that we have partnered with. They are within walking distance to the park and have been inspected for level of comfort.</p>
+        <ol>
+            <li id="firstChoice">Joe Blow Hotel 5 stars</li>
+            <li id="secondChoice">SpaceShuttle Hotel 4 stars</li>
+            <li id="thirdChoice">Rockets Are Us Motel 4 stars</li>
+        </ol>
+    </div>
+
+    <!--contact information and linking to the other pages-->
+    <footer>
+        <div id="fpLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="page.html">Page 3</a></li>
+            </ul>
+        </div>
+
+        <div id="blog">
+            <p><a href="blog.html">Visitor Blog Posts</a></p>
+        </div>
+
+        <div id="contactInformation">
+            <ul>
+                <li id="contact">Contact Us:</li>
+                <li id="name">Future Land</li>
+                <li id="email"><a href="f.futurelandemail.com">f.futurelandemail.com</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
+
 </html>
 <div id="bestRides">
     <h2>Popular Attractions</h2>
@@ -154,7 +169,7 @@
         <p>The world of tomorrow has many delights and secrets to be discovered soon you can experience them all. The future is only blink away.</p>
     </ol>
 </div>
-    
+
 <div id="accomidations">
     <h2>Where to Stay</h2>
     <p>We are excited to have you come and visit our park, for the best possiable experience please stay at these accomidations that we have partnered with. They are within walking distance to the park and have been inspected for level of comfort.</p>
@@ -164,7 +179,7 @@
         <li id="thirdChoice">Rockets Are Us Motel 4 stars</li>
     </ol>
 </div>
-    
+
 <footer>
     <div id="fpLinks">
         <ul>
@@ -173,11 +188,11 @@
             <li><a href="page.html">Page 3</a></li>
         </ul>
     </div>
-    
+
     <div id="blog">
         <p><a href="blog.html">Visitor Blog Posts</a></p>
     </div>
-    
+
     <div id="contactInformation">
         <ul>
             <li id="contact">Contact Us:</li>
@@ -187,5 +202,4 @@
     </div>
 </footer>
 
-</body>
-</html>
+</body></html>
