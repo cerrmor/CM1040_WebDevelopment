@@ -121,17 +121,15 @@ header {
 
 #logo {
     text-align: left;
-    width: 200px;
+    width: 100%;
 }
 
 #pageTitle {
     color: aqua;
-    text-align: left;
+    vertical-align: middle;
+    line-height: 100%;
+
 }
-
-header h1 {}
-
-header object {}
 
 /*Index.html CSS------------------------------------*/
 
@@ -144,7 +142,9 @@ header object {}
 
     width: 50%;
     padding: 5px;
-    min-width: 250px;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: left;
 }
 
 /* Clear floats after image containers */
@@ -152,6 +152,7 @@ header object {}
     content: "";
     clear: both;
     display: table;
+
 }
 
 
@@ -159,11 +160,13 @@ header object {}
     display: flex;
     width: 75%;
     min-width: 250px;
+
 }
 
 .column {
     flex: 50%;
     padding: 5px;
+
 }
 
 @media screen and (max-width: 6000px) {
