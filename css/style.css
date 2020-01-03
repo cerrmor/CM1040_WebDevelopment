@@ -9,6 +9,11 @@ body {
     line-height: 2;
 }
 
+.main-center {
+    width: 940px;
+    margin: 0 auto;
+}
+
 /*reset css*/
 
 p,
@@ -22,7 +27,53 @@ h6,
     margin-top: 0;
 }
 
-/*#index style*/
+/*ID Page 3*/
+
+#page3 {
+    background-image: url(../img/bg-page3.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+.SDGs_main{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 940px;
+    height: auto;
+}
+
+img.SDGs {
+    height: 220px;
+    width: auto;
+}
+
+#page3 .collection-list{
+    text-align: center;
+}
+
+#page3 .collection-list li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 5px;
+}
+
+#page3 .profile-txt{
+    display:  inline-block;     /* インラインブロック要素にする */
+    width: 440px;               /* 幅指定 */
+    padding:  10px;             /* 余白指定 */
+    vertical-align:  middle;    /* 要素を上下中央揃えにする */
+}
+
+#page3 img .profile-txt{
+    text-align: center;
+    height: 300px;
+}
+
+
 img {
     vertical-align: bottom;
 }
@@ -47,7 +98,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* page from 107 */
+/* header */
 
 header {
     width: 960px;
@@ -55,18 +106,18 @@ header {
     margin: 0 auto;
 }
 
-/*class*/
+/*logo*/
 
 .logo {
     float: left;
     margin-top: 50px;
 }
 
-.logo_image
-{
-    height: auto;
-    width: 30%;
+.logo_size {
+    height: 50px;
+    width: auto;
 }
+
 
 .global-nav {
     float: right;
@@ -91,10 +142,33 @@ header {
     text-decoration: none;
 }
 
+/*body*/
+
 .content {
     width: 960px;
     margin: 0 auto;
 }
+
+#wrap {
+    clear: both;
+    background-color: white;
+    margin-top: 220px;
+    padding: 35px 0;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    background-color: #767671;
+}
+
+footer small {
+    font-size: 12px;
+}
+
+
+/*buttonw*/
 
 .btn a {
     background-color: #009cd3;
@@ -116,28 +190,7 @@ header {
     color: #009cd3;
 }
 
-#wrap {
-    clear: both;
-    background-color: white;
-    margin-top: 220px;
-    padding: 35px 0;
-}
-
-footer {
-    text-align: center;
-    color: #ffffff;
-    padding: 20px 0;
-    background-color: #767671;
-}
-
-footer small {
-    font-size: 12px;
-}
-
-.main-center {
-    width: 940px;
-    margin: 0 auto;
-}
+/*font*/
 
 h1 {
     font-family: 'Bitter', serif;
@@ -145,15 +198,24 @@ h1 {
     border-bottom: 1px solid #CCCCCC;
 }
 
-h2 {
-    font-family: 'Bitter', serif;
-    font-size: 24px;
+h1.top {
+    text-align: center;
 }
 
 .icon:before {
     content: "";
     padding-right: 10px;
     border-left: 7px solid #9cb4a4;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Bitter', serif;
+    font-size: 16px;
 }
 
 .clearfix:after {
@@ -166,15 +228,74 @@ section {
     margin-bottom: 35px;
 }
 
+
+#page3 .career th {
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border: 1px solid #cccccc;
+}
+
+#page3 .career td {
+    width: 660px;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #cccccc;
+}
+
 table {
     border-spacing: 0;
     border-collapse: collapse;
+}
+
+#index #wrap {
+    background-color: transparent;
+    margin-top: 0;
+    padding: 0;
+}
+
+#portfolio {
+    background-image: url(../img/bg-portfolio.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+.main {
+    width: 700px;
+    margin: 0 10px;
+    float: left;
+}
+
+.sideber {
+    width: 200px;
+    margin: 0 10px 0 30px;
+    float: right;
+    font-family: 'Bitter', serif;
 }
 
 a img:hover {
     opacity: 0.8;
 }
 
+
+#collection {
+    background-image: url(../img/bg-photograph.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+#collection .collection-list li {
+    float: left;
+    list-style: none;
+    margin: 0 20px 15px 0;
+}
+
+#collection .collection-list li:nth-child(3n) {
+    margin-right: 0;
+}
 
 #contact {
     background-image: url(../img/bg-contact.jpg);
@@ -184,83 +305,70 @@ a img:hover {
     background-size: 100% auto;
 }
 
-#contact .access table{
+#contact .access table {
     float: left;
 }
 
 #contact .access th,
-#contact .access td
-{
+#contact .access td {
     text-align: left;
     vertical-align: top;
     line-height: 2.5;
 }
 
-#contact .access td
-{
+#contact .access td {
     padding-left: 30px;
 }
 
-#contact .access iframe
-{
+#contact .access iframe {
     width: 460px;
-    height: 300px;
     float: right;
 }
 
-#contact .form
-{
+#contact .form {
     background-color: #eaeaea;
     padding: 30px 50px;
 }
 
-#contact .form dl dt
-{
+#contact .form dl dt {
     width: 165px;
     padding: 10px 0;
     float: left;
     clear: both;
 }
 
-#contact .form dl dd
-{
+#contact .form dl dd {
     padding: 10px 0;
 }
 
-#contact .form .name
-{
+#contact .form .name {
     width: 240px;
     height: 30px;
 }
 
-#contact .form .email
-{
+#contact .form .email {
     width: 300px;
     height: 30px;
 }
 
-#contact .form .tel
-{
+#contact .form .tel {
     width: 240px;
     height: 30px;
 }
 
-#contact .form .type
-{
+#contact .form .type {
     width: 180px;
     height: 30px;
 }
 
-#contact .form .message
-{
+#contact .form .message {
     width: 660px;
     height: 150px;
 }
 
-#contact .form button
-{
+#contact .form button {
     background-color: #009cd3;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 20px;
     font-family: 'Bitter', serif;
     width: 120px;
@@ -273,109 +381,87 @@ a img:hover {
     margin-left: 165px;
 }
 
-#contact .form button:hover
-{
+#contact .form button:hover {
     background-color: #fff;
     color: #009cd3;
     cursor: pointer;
 }
 
-#contact .form .required:afterk
-{
+#contact .form .required:afterk {
     content: "*";
     color: #ff0000;
 }
 
-#contact .form .attention
-{
+#contact .form .attention {
     margin: 20px 0 0 165px;
 }
 
-@media screen and (max-width:600px)
-{
+@media screen and (max-width:600px) {
     /*画像サイズが600px以下の場合に適用*/
-    
-    body
-    {
+
+    body {
         font-size: 3.5vw;
     }
-    
-    h1
-    {
+
+    h1 {
         font-size: 7.2vw;
     }
-    
-    h2
-    {
+
+    h2 {
         font-size: 6vw;
     }
-    
-    header
-    {
+
+    header {
         width: auto;
         margin: 0 5%;
     }
-    
-    .logo
-    {
+
+    .logo {
         float: none;
         margin-top: 60px;
         text-align: center;
     }
-    
-    .global-nav
-    {
+
+    .global-nav {
         float: none;
         margin-top: 40px;
         text-align: center;
     }
-    
-    .global-nav li
-    {
+
+    .global-nav li {
         display: inline;
         float: none;
         margin: 0 8px;
     }
-    
-    #wrap
-    {
+
+    #wrap {
         margin-top: 40px;
         padding: 35px 0 0;
     }
-    
-    .content
-    {
+
+    .content {
         width: 100%;
     }
-    
-    .main
-    {
+
+    .main {
         float: none;
         width: auto;
         margin: 0 5%;
     }
-    
-    h2 img
-    {
+
+    h2 img {
         max-width: 100%;
     }
-    
-    #portfolio
-    {
+
+    #portfolio {
         background-image: url(../img/bg-portfolio-sp.jpg);
     }
-    
-    .sidebar
-    {
+
+    .sidebar {
         width: auto;
         float: none;
         margin: 0;
         padding: 30px 10% 10px;
         background-color: #f7f6f4;
     }
-}
 
-.logo_size {
-    height: 50px;
-    width: auto;
-}
