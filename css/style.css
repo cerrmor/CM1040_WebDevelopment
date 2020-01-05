@@ -9,22 +9,17 @@ body {
     line-height: 2;
 }
 
-.main-center {
-    width: 940px;
-    margin: 0 auto;
-}
 
 /*reset css*/
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-    {
-    margin-top: 0;
+p,h1,h2,h3{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-center {
+    width: 940px;
+    margin: 0 auto;
 }
 
 /*ID Page 3*/
@@ -37,7 +32,7 @@ h6,
     background-size: 100% auto;
 }
 
-.SDGs_main{
+#page3 .SDGs_main{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +41,7 @@ h6,
     height: auto;
 }
 
-img.SDGs {
+#page3 img.SDGs {
     height: 220px;
     width: auto;
 }
@@ -58,19 +53,124 @@ img.SDGs {
 #page3 .collection-list li {
     display: inline-block;
     list-style: none;
-    margin: 0px 5px;
+    margin: 0px 8px;
 }
 
-#page3 .profile-txt{
-    display:  inline-block;     /* インラインブロック要素にする */
-    width: 440px;               /* 幅指定 */
-    padding:  10px;             /* 余白指定 */
-    vertical-align:  middle;    /* 要素を上下中央揃えにする */
+#page3 .collection-list li:first-child{
+    margin-left: 0;
 }
 
-#page3 img .profile-txt{
-    text-align: center;
-    height: 300px;
+#page3 .collection-list li:nth-child(4n){
+    margin-right: 0;
+}
+
+#page3 .goals-txt-odd{
+    text-align: justify;
+    text-justify: auto;
+    width: 540px;
+    float: left;
+    padding:0 20px;
+}
+
+#page3 .goals-image-odd{
+    float: right;
+    padding-right: 20px;
+}
+
+#page3 .goals-txt-even{
+    text-align: justify;
+    text-justify: auto;
+    width: 540px;
+    float: right;
+    padding: 0 20px;
+}
+
+#page3 .goals-image-even{
+    float: left;
+    padding-left: 20px;
+}
+
+/*slide*/
+
+.slide {
+    float: right;
+    position:relative;
+    width: 340px;
+    height: 340px;
+}
+
+.slide:first-child{
+    padding-left: 20px;
+}
+
+
+@keyframes slideshow{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    28%{
+        opacity: 1
+    }
+    38%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+.slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation :slideshow 24s linear infinite;
+}
+
+.slide img:nth-child(2){
+    animation-delay: 8s;
+}
+
+.slide img:last-child{
+    animation-delay: 16s;
+}
+
+/*In action Directly SDGs*/
+
+#goal04 {
+    background-color: #ffbfcf;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#goal05 {
+    background-color: #ffc3b7;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#goal07 {
+    background-color: #ffffaf;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#goal11 {
+    background-color: #ffc87d;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.goals {
+    color:dimgrey;
+    padding:0px 20px;
 }
 
 
@@ -168,9 +268,10 @@ footer small {
 }
 
 
-/*buttonw*/
+/*button*/
 
 .btn a {
+    float: right;
     background-color: #009cd3;
     color: #ffffff;
     font-size: 20px;
@@ -190,6 +291,39 @@ footer small {
     color: #009cd3;
 }
 
+
+/*page top button*/
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #3f98ef;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+#page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    text-align: center;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
 /*font*/
 
 h1 {
@@ -204,8 +338,8 @@ h1.top {
 
 .icon:before {
     content: "";
-    padding-right: 10px;
     border-left: 7px solid #9cb4a4;
+    padding-right: 10px;
 }
 
 h2 {
@@ -218,6 +352,8 @@ p {
     font-size: 16px;
 }
 
+/*layout*/
+
 .clearfix:after {
     content: "";
     display: block;
@@ -228,74 +364,11 @@ section {
     margin-bottom: 35px;
 }
 
-
-#page3 .career th {
-    width: 240px;
-    background-color: #f0f0f0;
-    padding: 12px 0;
-    border: 1px solid #cccccc;
-}
-
-#page3 .career td {
-    width: 660px;
-    padding: 12px 0 12px 40px;
-    border: 1px solid #cccccc;
-}
-
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-#index #wrap {
-    background-color: transparent;
-    margin-top: 0;
-    padding: 0;
-}
-
-#portfolio {
-    background-image: url(../img/bg-portfolio.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-    background-size: 100% auto;
-}
-
-.main {
-    width: 700px;
-    margin: 0 10px;
-    float: left;
-}
-
-.sideber {
-    width: 200px;
-    margin: 0 10px 0 30px;
-    float: right;
-    font-family: 'Bitter', serif;
-}
-
 a img:hover {
     opacity: 0.8;
 }
 
-
-#collection {
-    background-image: url(../img/bg-photograph.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-    background-size: 100% auto;
-}
-
-#collection .collection-list li {
-    float: left;
-    list-style: none;
-    margin: 0 20px 15px 0;
-}
-
-#collection .collection-list li:nth-child(3n) {
-    margin-right: 0;
-}
+/*contact*/
 
 #contact {
     background-image: url(../img/bg-contact.jpg);
@@ -396,6 +469,9 @@ a img:hover {
     margin: 20px 0 0 165px;
 }
 
+
+/*responsive css*/
+
 @media screen and (max-width:600px) {
     /*画像サイズが600px以下の場合に適用*/
 
@@ -407,7 +483,7 @@ a img:hover {
         font-size: 7.2vw;
     }
 
-    h2 {
+    h2{
         font-size: 6vw;
     }
 
@@ -457,11 +533,4 @@ a img:hover {
         background-image: url(../img/bg-portfolio-sp.jpg);
     }
 
-    .sidebar {
-        width: auto;
-        float: none;
-        margin: 0;
-        padding: 30px 10% 10px;
-        background-color: #f7f6f4;
     }
-
