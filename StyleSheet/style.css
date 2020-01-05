@@ -67,6 +67,12 @@ a:hover {
 
 }
 
+/* header image */
+header {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
 
 /* General Fonts & Body */
 
@@ -86,7 +92,7 @@ h1 {
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-    font-size: 2em;
+    font-size: 3em;
     color: black;
 }
 
@@ -95,9 +101,10 @@ h2 {
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2em;
     ;
     color: black;
+    border-bottom: 1px solid #CCCCCC;
 }
 
 h3 {
@@ -120,11 +127,29 @@ p {
     color: black;
 }
 
+.main-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+/*sets up a marker at the begging of the section titles*/
+.icon:before {
+    content: "-";
+    padding-right: 10px;
+    border-left: 7px solid #9cb4a4;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
 /*Header CSS---------------------------------------*/
 
-#logo {
+.logo_size_about {
     text-align: left;
-    width: 100%;
+    height: 100%;
 }
 
 #pageTitle {
@@ -143,18 +168,19 @@ p {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
-#welcomeGreeting {
+.welcomeGreeting {
     text-align: center;
     padding-top: 70px;
 }
 
 #parkMap {
     width: 95%;
-    max-width: 1000px;
+    max-width: 700px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     float: none;
+    transition: transform .3s;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -166,15 +192,6 @@ p {
     max-width: 300px;
     text-align: left;
 }
-
-/* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-
-}
-
 
 .row {
     display: flex;
@@ -196,3 +213,103 @@ p {
 }
 
 /*Page3.html CSS------------------------------------*/
+
+.slider-holder {
+    width: 100%;
+    max-width: 800px;
+    max-height: 400px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder {
+    width: 2400px;
+    background-color: red;
+    height: 400px;
+    clear: both;
+    position: relative;
+}
+
+.slider-image {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    float: left;
+
+}
+
+#slider-image-1:target ~ .image-holder {
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder {
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-holder {
+    left: -1600px;
+}
+
+.button-holder {
+    position: relative;
+    bottom: 20px;
+}
+
+.slider-change {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.zoom:hover {
+    transition: transform .3s;
+    transform: scale(1.30);
+}
+
+/*sets up the footer to also be a navigation bar*/
+footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    background-color: #352d2f;
+
+}
+
+footer #contactInformation {
+    text-align: center;
+    margin: auto;
+    width: 99% color: white;
+
+}
+
+footer #contactInformation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+footer #contactInformation ul li {
+    display: inline-block;
+    margin: 20px;
+    height: 20px;
+
+}
+
+footer #contactInformation ul li a {
+    color: white;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
