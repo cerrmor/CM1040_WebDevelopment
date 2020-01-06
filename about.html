@@ -4,7 +4,7 @@
 <!-- Meta data -->
 
 <head>
-    <title>Future Land - HomePage</title>
+    <title>Future Land | About</title>
     <meta charset="utf-8">
     <meta name="description" content="Explore the exciting world of space, science and the future! Come to Future Land">
     <meta name="author" content="Future Land Amusement Park">
@@ -14,75 +14,73 @@
     <link rel="stylesheet" type="text/css" href="StyleSheet/style.css">
 </head>
 
-<body>
+<body id="about">
 
-    <div class="navigation-bar">
-
-
-        <div id="navigation-container">
-
-            <a href="index.html"><img class="logo_size_about" src="img/logo.png" alt="future land"></a>
-
-            <ul>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img class="logo_size" src="img/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul class="global-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="page3.html">Sustainability</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </div>
-    </div>
-
-    <header>
-
-
+        </nav>
     </header>
 
     <!-- wrap start -->
     <div id="wrap" class="clearfix">
         <div class="content">
-            <div class="main-content">
+            <div class="mainContent">
+                <section class="aboutWelcome">
+                    <h1 class="welcomeGreeting">We are Future Land!</h1>
+                    <h2 class="top">A bit about us!</h2>
+                    <p>
+                        The Future Rides mission has always been to srive to offer a futuristic experience to everyone enjoying our theme park. Whether you come to try out our Anti Grav Simulator or the World of Tomorrow, you will see what the future holds.
 
-                <h1 class="welcomeGreeting">We are Future Land!</h1>
+                        <br><br>
 
-                <h2 class="top">A bit about us!</h2>
-                <p>The Future Rides mission has always been to srive to offer a futuristic experience to everyone enjoying our theme park. Whether you come to try out our Anti Grav Simulator or the World of Tomorrow, you will see what the future holds.
-                    <br><br>
-                    We didn't start in the future, rather our rides and experiences have evolved greatly. Unique rides were developed and we dove head first into VR.
-                </p>
+                        We didn't start in the future, rather our rides and experiences have evolved greatly. Unique rides were developed and we dove head first into VR.
+                    </p>
+                </section>
 
-                <h2 class="top">Take a Look Around</h2>
-                <p>Our Park is very easy to navigate; it's the future!
-                    <br><br>
-                    Take a look for yourself and hover over our map to get a closer view.
+                <section class="fpWelcome">
+                    <h2 class="top">Take a Look Around</h2>
+                    <p>Our Park is very easy to navigate; it's the future!
+                        <br><br>
+                        Take a look for yourself and hover over our map to get a closer view.
 
-                    <div class="ParkMap">
-                        <img id="parkMap" class="zoom" src="img/FutureLandsMap.jpg" alt="Future Lands Map">
-                    </div>
-
-                    <h2 class="top">About Our Experiences</h2>
-                    <p>Take a closer look at some of our experiences below.
-
-                        <ul>
-                            <li> VR Space Station Experience: Enjoy a 360 degree view from the space station like you are actually there!</li>
-                            <li> VR Galaxy Exploration: Explor the Canis Major Dwarf Galaxy; our closest galaxy!</li>
-                            <li> VR Space Walk: Can you beat all the levels for space ship repair? Try it yourself at our VR facility.</li>
-                        </ul>
-
-                        <div class="slider-holder">
-                            <span id="slider-image-1"></span>
-                            <span id="slider-image-2"></span>
-                            <span id="slider-image-3"></span>
-                            <div class="image-holder">
-                                <img src="img/PhotoSlide-1-Vr-Space-Station-Exp.jpg" class="slider-image" />
-                                <img src="img/PhotoSlide-2-Galaxy-Exp.jpg" class="slider-image" />
-                                <img src="img/PhotoSlide-3-Space-Walk-Exp.jpg" class="slider-image" />
-                            </div>
-                            <div class="button-holder">
-                                <a href="#slider-image-1" class="slider-change"></a>
-                                <a href="#slider-image-2" class="slider-change"></a>
-                                <a href="#slider-image-3" class="slider-change"></a>
-                            </div>
+                        <div class="ParkMap">
+                            <img id="parkMap" class="zoom" src="img/FutureLandsMap.jpg" alt="Future Lands Map">
                         </div>
+                </section>
+                <h2 class="top">About Our Experiences</h2>
+                <p>Take a closer look at some of our experiences below.
+
+                    <ul>
+                        <li> VR Space Station Experience: Enjoy a 360 degree view from the space station like you are actually there!</li>
+                        <li> VR Galaxy Exploration: Explor the Canis Major Dwarf Galaxy; our closest galaxy!</li>
+                        <li> VR Space Walk: Can you beat all the levels for space ship repair? Try it yourself at our VR facility.</li>
+                    </ul>
+
+                    <div class="slider-holder">
+                        <span id="slider-image-1"></span>
+                        <span id="slider-image-2"></span>
+                        <span id="slider-image-3"></span>
+                        <div class="image-holder">
+                            <img src="img/PhotoSlide-1-Vr-Space-Station-Exp.jpg" class="slider-image" />
+                            <img src="img/PhotoSlide-2-Galaxy-Exp.jpg" class="slider-image" />
+                            <img src="img/PhotoSlide-3-Space-Walk-Exp.jpg" class="slider-image" />
+                        </div>
+                        <div class="button-holder">
+                            <a href="#slider-image-1" class="slider-change"></a>
+                            <a href="#slider-image-2" class="slider-change"></a>
+                            <a href="#slider-image-3" class="slider-change"></a>
+                        </div>
+                    </div>
 
             </div>
         </div>
@@ -90,13 +88,15 @@
 
 </body>
 
+<!--linking to the other pages-->
 <footer>
-    <div id="contactInformation">
+    <div id="fpLinks">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="page3.html">Sustainability</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Visitor Blog</a></li>
         </ul>
     </div>
+
 </footer></html>
