@@ -185,9 +185,19 @@ footer small {
 
 /*About Page*/
 
+
+/* Top of the page Title */
 .welcomeGreeting {
     text-align: center;
     padding-top: 70px;
+}
+
+/*Main map*/
+.ParkMapBoxModel {
+    width: 85%;
+    padding: 55px;
+    border: 0px;
+    margin: 0px;
 }
 
 #parkMap {
