@@ -309,6 +309,12 @@ a:hover {
     padding: 0 20px;
 }
 
+/*alines the new attraction list on the left */
+.newAttractions ol li{
+    text-align: left;
+    padding: 0 20px;
+}
+
 /*makes the buy now button look more visually appleaing*/
 .btnBuy {
     background-color: #4CAF50;
@@ -340,11 +346,29 @@ a:hover {
     margin: 0 auto;
 }
 
+/* styles the image for setting the mood*/
+.peopleFun{
+    align-content: center;
+    width:840px;
+    height:350px;
+}
+
 /*sets up a marker at the begging of the section titles*/
 .icon:before {
     content: "|";
     padding-right: 10px;
     border-left: 7px solid #9cb4a4;
+}
+
+/*lets the images enlarge when the mouse hovers over them*/
+.enlarge{
+     width:250px;
+    height:200px;
+}
+
+.enlarge:hover {
+    transition: transform .3s;
+    transform: scale(1.30);
 }
 
 .clearfix:after {
