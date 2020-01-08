@@ -344,6 +344,8 @@ a:hover {
 .mainContent {
     width: 99%;
     margin: 0 auto;
+    text-align: center;
+    list-style-position: inside;
 }
 
 /* styles the image for setting the mood*/
