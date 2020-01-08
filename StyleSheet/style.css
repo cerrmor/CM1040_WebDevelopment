@@ -701,13 +701,17 @@ a img:hover {
     cursor: pointer;
 }
 
-#contact .form .required:afterk {
+#contact .form .required:after {
     content: "*";
     color: #ff0000;
 }
 
 #contact .form .attention {
     margin: 20px 0 0 165px;
+}
+
+iframe {
+    border-width: 0px;
 }
 
 /*responsive css*/
